@@ -1,0 +1,302 @@
+body {
+  margin: 0;
+  color: #6a6f8c;
+  background: #c8c8c8;
+  font: 600 16px/18px 'Open Sans', sans-serif;
+}
+
+*,:after,:before {
+  box-sizing: border-box;
+}
+
+.clearfix:after,.clearfix:before {
+  content: '';
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.login-wrap {
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  max-width: 525px;
+  min-height: 670px;
+  position: relative;
+  /* background: url(https://lh3.googleusercontent.com/fife/AK0iWDxrfe7D60062tNHVFDK49g-nihkA2fGrxkTacdVD3WZszXJBhskLV7O-JZieExWexHNY7mI1Rf9wfDMCPygJFLF-PYr7SDlHapf0OK3lCMnY1G7cihT_WBoNaz6cae4S5v8tnrH8iPfJwUa79uE1yAT4Lw2wqcCiYjG6AE74WqkZmrsLJN38ufQ8IAb3KJROgnahnXioJJXdNZemaqEPrEc60hxlo2ZxxvweeMRk6IbwxDj9PWgHe5qWRtrGgIT0m5B9wpiah8djNSTCqPi7aA0Is9GiOodm-XZHkDk3L0G5GOfVJSq3d-gn4EeEWgQSfnfzSU_Dt6oDKSPJwfi69jSaKLGpzOcn0hDHKGQDjIoZoRjZzJdMjRx7F3noKJtfsf-q3L04YG1U-fGrnoaCcTeSLbiW1bdLTzP9oOgUqXE9dQ8jCXdMcbpXStAxZtNQCG8fK7VruFYZHJACzIN5w6AKcQZz3wT7VYjjt7uHRJ8u2Kh0JD7yXcb8hWhZUEvus8EBsYTivy5teCJVFeJziUwE7eGYFdofv5fw7f0p6vGBlwmf0axOQmP8N3SZXQot__SPfUXPQEZ8Yti7Cu8BYSgnKt7Yop4bTnzanNF_5391wZMzg7D4AkuglzXHR_qEVAcMoKe2OCqnqFGo0gcQ2yIH0x1RoCBc-_Nh0cCOk7TdEtF2pAdSKL2nXr5aVfStQMavzcHU8pqOZNkEzbrbFdJNVfwlzR4UGnxJ_L26Wianaqn_GcCeWgx5DicUcqpdnJJg3H1dlB9vEGo5ByBWEmiP6Xj16KBNwMRMTl7tK1ZiLumBepEVqNz1YX8Wy6Qq2ELN2d4BwUjBA6iVRoDEKu1feL5c2WxT7Zhz-norHiwWebkL0RLmco0cbpxacnTUcZ1csjcKxIyt1Jh1ujgT6OzgDk5OfbJP7tG-5ZSFM6Q7jlfV0Ip2fiYHI7ChrMaM-1lZa8sezbRvpkmCtrkvfIko3dwZGjgozm8_WI0B2HA4a3y0PskerG_iSb2qkmQ4Z-d9AIyK9hPJuh8iDCzIFwP9RoiIX90V0nwA-fBISkdDAQ-pIturmYZci0PMwpoj5vKnZxS8xa5A9WCx9oODGqyTSiTOZiYZdEQYol9cDDuXAcfp7qIJarn4nqPhlOImU86YGwoqzj5EJY_AZpA3OgjgRKOjNKeod3bOvkAn-euDjMCjJU_f7fa85h_lw4_EQi_zohg2EWBTSoo0ZNQxYKxupYNIkBQn43CJMgi9HmYhJbaEiHe2DBNTuTWJA0YxK_2nkNQfXKQX2XMAaUQ0ShPQEu_bwB7_kzCOZaP4CvNnqsG8Oe4vh0Xnzd3P-my5GRCkp4GW2CQVaiixgf_i69sFa2gJYkMoBtbR0gVC_-5KWOWqxepup9PmgDtWZPfo8xo_ujdTgh1zKM1m3dPcpGgtaWT0qp3ybTzMqL_cQrheAOrsEEK18CRQOeQkQbu4hmhiFods6yAM64uD5H0B3mjGvSQmMYFwnS4DtYI6WCZ2WGJyoO4HfdGf1PfVVoo9LE4jOd-QJ4BEg=w1255-h877) no-repeat center; */
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, .24), 0 17px 50px 0 rgba(0, 0, 0, .19);
+}
+
+.login-html {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  padding: 90px 70px 50px 70px;
+  background: rgba(40, 57, 101, .9);
+}
+
+.login-html .sign-in-htm,
+.login-html .sign-up-htm {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  transition: all .4s linear;
+}
+
+.login-html .sign-in,
+.login-html .sign-up,
+.login-form .group .check {
+  display: none;
+}
+
+.login-html .tab,
+.login-form .group .label,
+.login-form .group .button {
+  text-transform: uppercase;
+}
+
+.login-html .tab {
+  font-size: 22px;
+  margin-right: 15px;
+  padding-bottom: 5px;
+  margin: 0 15px 10px 0;
+  display: inline-block;
+  border-bottom: 2px solid transparent;
+}
+
+.login-html .sign-in:checked + .tab,
+.login-html .sign-up:checked + .tab {
+  color: #fff;
+  border-color: #1161ee;
+}
+
+.login-form {
+  min-height: 345px;
+  position: relative;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+.login-form .group {
+  margin-bottom: 15px;
+}
+
+.login-form .group .label,
+.login-form .group .input,
+.login-form .group .button {
+  width: 100%;
+  color: #fff;
+  display: block;
+}
+
+.login-form .group .input,
+.login-form .group .button {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, .1);
+}
+a
+/* .login-form .group input[data-type="password"] {
+  text-security: circle;
+  -webkit-text-security: circle;
+} */
+
+.login-form .group .label {
+  color: #aaa;
+  font-size: 12px;
+}
+
+.login-form .group .button {
+  background: #1161ee;
+}
+
+.login-form .group label .icon {
+  width: 15px;
+  height: 15px;
+  border-radius: 2px;
+  position: relative;
+  display: inline-block;
+  background: rgba(255, 255, 255, .1);
+}
+
+.login-form .group label .icon:before,
+.login-form .group label .icon:after {
+  content: '';
+  width: 10px;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  transition: all .2s ease-in-out 0s;
+}
+
+.login-form .group label .icon:before {
+  left: 3px;
+  width: 5px;
+  bottom: 6px;
+  transform: scale(0) rotate(0);
+}
+
+.login-form .group label .icon:after {
+  top: 6px;
+  right: 0;
+  transform: scale(0) rotate(0);
+}
+
+.login-form .group .check:checked + label {
+  color: #fff;
+}
+
+.login-form .group .check:checked + label .icon {
+  background: #1161ee;
+}
+
+.login-form .group .check:checked + label .icon:before {
+  transform: scale(1) rotate(45deg);
+}
+
+.login-form .group .check:checked + label .icon:after {
+  transform: scale(1) rotate(-45deg);
+}
+
+.login-html .sign-in:checked + .tab + .sign-up + .tab + .login-form .sign-in-htm {
+  transform: rotate(0);
+}
+
+.login-html .sign-up:checked + .tab + .login-form .sign-up-htm {
+  transform: rotate(0);
+}
+
+.hr {
+  height: 2px;
+  margin: 60px 0 50px 0;
+  background: rgba(255, 255, 255, .2);
+}
+
+.foot-lnk {
+  text-align: center;
+}
+
+
+.group {
+  position: relative;
+  display: flex;
+}
+
+.phone-input-group {
+  display: flex;
+  align-items: center; 
+}
+
+#phone {
+  width: calc(105% - 120px);
+  box-sizing: border-box;
+}
+#user1 {
+  width: calc(250%);
+  box-sizing: border-box;
+}
+#pass1 {
+  width: calc(250%);
+  box-sizing: border-box;
+}
+
+.add-button {
+  background-color: #5d53ca; /* 배경 색상 */
+  color: rgba(245, 237, 237, 0.853); 
+  text-align: center; 
+  text-decoration: none;  
+  font-size: 40px;
+  margin: 4px 2px; 
+  cursor: pointer; 
+  overflow: visible; 
+  white-space: nowrap;
+  width: 400px; /* 너비를 텍스트에 따라 자동으로 조절 */
+  height: 140px; /* 필요에 따라 높이를 조절 */
+  border-radius: 12px; 
+  position:relative;
+  display: inline-block;
+  background: rgba(255, 255, 255, .1);
+}
+
+.log-out {
+  background-color:#1161ee; /* 배경 색상 */
+  color: white; 
+  text-align: center; 
+  text-decoration: none;  
+  font-size: 13px;
+  margin: 4px 2px; 
+  cursor: pointer; 
+  overflow: visible; 
+  white-space: nowrap;
+  width: 400px; /* 너비를 텍스트에 따라 자동으로 조절 */
+  height: 40px; /* 필요에 따라 높이를 조절 */
+  border-radius: 12px; 
+  position: relative;
+  display: inline-block;
+}
+
+/* img {
+  position: absolute;
+  left: 155px;
+  top: 80px;
+} */
+
+
+h1 {
+  text-align: center;
+  position: absolute;
+  top: 415px;
+  left: 175px;
+  color: white;
+  font-size: 50px;
+  font-weight: 400;
+}
+
+h2 {
+  text-align: center;
+  position: absolute;
+  top: 465px;
+  left: 88px;
+  color: white;
+  font-size: 60px;
+  font: bold;
+}
+
+#loading {
+  width: 100%;
+  height: 100%;
+  top: 300px;
+  left: 30;
+  position: fixed;
+  display: block;
+  opacity: 0.6;
+  background: #e4e4e4;
+  z-index: 99;
+  text-align: center;
+}
+
+#loading > img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 100;
+}
+ #loading > p {
+    position: absolute;
+    top: 57%;
+    left: 43%;
+    z-index: 101;
+  }
